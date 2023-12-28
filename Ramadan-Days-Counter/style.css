@@ -1,0 +1,14 @@
+body {
+    height: 100%;
+}
+
+.main {
+    background: url(imgs/ramadan-background.webp);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+#daysLeft {
+    font-size: 60px;
+}
