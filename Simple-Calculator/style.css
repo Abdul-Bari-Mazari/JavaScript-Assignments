@@ -1,0 +1,68 @@
+.card {
+    width: 400px;
+}
+
+.number-box {
+    width: 260px;
+}
+
+
+/* style appliad to all buttons */
+button {
+    font-size: 18px;
+    width: 84px;
+    height: 50px;
+}
+
+/* Operator on top */
+.top-operators button {
+    font-size: 14px;
+}
+
+ /* Operands / numbers */
+.operand {
+    background-color: rgb(73, 73, 73);
+}
+
+.operand:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+
+/* Operators on right side of the calculator */
+.right-operators {
+    width: 86px;
+}
+
+.operator {
+    background-color: rgb(56, 56, 56);
+}
+
+.operator:hover {
+    background-color: rgb(73, 73, 73);
+}
+
+
+/* equal to sign */
+.equal-to {
+    color: black;
+    background-color: rgba(127, 255, 212, 0.745);
+}
+
+.equal-to:hover {
+    background-color: rgba(127, 255, 212, 0.745);
+    opacity: 0.9;
+}
+
+/* Button active */
+button:active {
+    opacity: 0.6;
+}
+
+input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
