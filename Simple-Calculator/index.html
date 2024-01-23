@@ -13,48 +13,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body data-bs-theme="dark">
-
     <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-3 p-0">
+      <div class="pt-5 row">
+        <div class="col-12 col-md-3 p-0 text-center">
           <div class="card p-2">
+            <h1 class="text-center text-warning">Calculator</h1>
             <div class="card-body">
-                <div class="input-box">
-
-                    <input id="answer-field" class="w-100 bg-dark" type="number">
-                    <input  id="input-field" class="w-100 bg-dark" type="text">
-                </div>
+                
+              <div class="input-box">
+                    <input id="answer-field" class="mb-2 px-3 w-100 bg-dark fs-3" type="text" readonly>
+                    <input  id="input-field" class="mb-3 px-3 w-100 bg-dark fs-3" type="text" readonly>
+                  </div> 
+            
                 <div class="top-operators d-flex gap-1 flex-wrap mb-1">
-                    <button class="operator rounded border-0">%</button>
-                    <button class="operator rounded border-0">CE</button>
-                    <button class="operator rounded border-0">C</button>
-                    <button class="operator rounded border-0"><i style="font-size: 16px;" class="fa-solid fa-delete-left"></i></button>
-                    <button class="operator rounded border-0">1/x</button>
-                    <button class="operator rounded border-0">x<sup>2</sup></button>
-                    <button class="operator rounded border-0"><sup>2</sup>√x</button>
-                    <button style="font-size: 18px;" class="operator rounded border-0"> &#247</button>
+                    <button onclick="insertChar('%')" class="operator rounded border-0">%</button>
+                    <button onclick="clearInput()" class="operator rounded border-0">CE</button>
+                    <button onclick="clearAll()" class="operator rounded border-0">C</button>
+                    <button onclick="delChar()" class="operator rounded border-0"><i style="font-size: 16px;" class="fa-solid fa-delete-left"></i></button>
+                    <button onclick="upon()" class="operator rounded border-0">1/x</button>
+                    <button onclick="square()" class="operator rounded border-0">x<sup>2</sup></button>
+                    <button onclick="squareRoot()" class="operator rounded border-0"><sup>2</sup>√x</button>
+                    <button onclick="insertChar('/')" style="font-size: 18px;" class="operator rounded border-0"> &#247</button>
                 </div>
-              <div class="wraper d-flex gap-1">
+             
+                <div class="wraper d-flex gap-1">
                 <div class="number-box d-flex gap-1 flex-wrap">
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">7</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">8</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">9</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">4</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">5</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">6</button>
-                  <button id="one" class="operand secondary border-0 rounded btn1" onclick="getNumber()">1</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">2</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">3</button>
+                  <button onclick="insertChar('7')" class="operand secondary border-0 rounded">7</button>
+                  <button onclick="insertChar('8')" class="operand secondary border-0 rounded">8</button>
+                  <button onclick="insertChar('9')" class="operand secondary border-0 rounded">9</button>
+                  <button onclick="insertChar('4')" class="operand secondary border-0 rounded">4</button>
+                  <button onclick="insertChar('5')" class="operand secondary border-0 rounded">5</button>
+                  <button onclick="insertChar('6')" class="operand secondary border-0 rounded">6</button>
+                  <button id="one" class="operand secondary border-0 rounded btn1" onclick="insertChar('1')">1</button>
+                  <button onclick="insertChar('2')" class="operand secondary border-0 rounded">2</button>
+                  <button onclick="insertChar('3')" class="operand secondary border-0 rounded">3</button>
                   <button class="operand secondary border-0 rounded">-</button>
-                  <button onclick="getNumber()" class="operand secondary border-0 rounded">0</button>
-                  <button class="operand secondary border-0 rounded">.</button>
+                  <button onclick="insertChar('0')" class="operand secondary border-0 rounded">0</button>
+                  <button onclick="insertChar('.')" class="operand secondary border-0 rounded">.</button>
                 </div>
+              
                 <div class="right-operators d-flex flex-column gap-1">
-                  <button class="operator rounded border-0">&#215</button>
-                  <button class="operator rounded border-0">&#8722</button>
-                  <button class="operator rounded border-0">+</button>
-                  <button class="equal-to operator rounded border-0 ">=</button>
+                  <button onclick="insertChar('*')" class="operator rounded border-0">&#215</button>
+                  <button onclick="insertChar('-')" class="operator rounded border-0">&#8722</button>
+                  <button onclick="insertChar('+')" class="operator rounded border-0">+</button>
+                  <button onclick="calulation()" class="equal-to operator rounded border-0 ">=</button>
+               
                 </div>
               </div>
             </div>
