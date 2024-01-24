@@ -31,46 +31,69 @@
         </button>
         <div class="" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-          <img
-            class="git-logo"
-            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
-            alt=""
-          />
+          <a href="https://github.com/Abdul-Bari-Mazari">
+            <img
+              class="git-logo"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+              alt=""
+          /></a>
         </div>
       </div>
     </nav>
 
-    <section class="main-section bg-secondary p-5 d-flex align-items-center justify-content-center">
+    <section
+      class="main-section bg-secondary p-5 d-flex align-items-center justify-content-center"
+    >
       <div class="container">
-        <div class="row text-center d-flex align-items-center justify-content-center">
+        <div
+          class="row text-center d-flex align-items-center justify-content-center"
+        >
           <div class="col rounded main-div">
             <h2 class="text-light">Age Calculator</h2>
             <div class="getDate mt-4 d-flex flex-column gap-3 d-sm-block">
               <input
                 class="date-input rounded border border-2 px-3 p-2 text-dark"
-                type="date" id="date-input"
+                type="date"
+                id="date-input"
               />
               <button
-                onclick="calculateDOB()" class="calculate rounded px-4 p-2 bg-success fw-bold text-light mx-3"
+                onclick="calculateDOB()"
+                class="calculate rounded px-4 p-2 bg-success fw-bold text-light mx-3"
               >
                 Calculate
               </button>
-
             </div>
             <div class="calculated-dates mt-5">
-                <p class="bg-light d-block d-sm-inline px-4 py-3 rounded"><span class="fw-bold fs-4" id="years"></span> years</p>
-                <p class="bg-light d-block d-sm-inline mx-4 px-4 py-3 rounded"><span class="fw-bold fs-4" id="months"></span> months</p>
-                <p class="bg-light d-block d-sm-inline px-4 py-3 rounded"><span class="fw-bold fs-4" id="days"></span> days</p>
+              <p class="bg-light d-block d-sm-inline px-4 py-3 rounded">
+                <span class="fw-bold fs-4" id="years"></span> years
+              </p>
+              <p class="bg-light d-block d-sm-inline mx-4 px-4 py-3 rounded">
+                <span class="fw-bold fs-4" id="months"></span> months
+              </p>
+              <p class="bg-light d-block d-sm-inline px-4 py-3 rounded">
+                <span class="fw-bold fs-4" id="days"></span> days
+              </p>
             </div>
-            <p id="errorMessage" class="d-inline text-warning fw-bold fs-5 mt-5"></p>
+            <p
+              id="errorMessage"
+              class="d-inline text-warning fw-bold fs-5 mt-5"
+            ></p>
           </div>
         </div>
       </div>
       <div class="custom-shape-divider-bottom-1706096318 d-none d-sm-block">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M649.97 0L550.03 0 599.91 54.12 649.97 0z" class="shape-fill"></path>
+        <svg
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1200 120"
+          preserveAspectRatio="none"
+        >
+          <path
+            d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"
+            class="shape-fill"
+          ></path>
         </svg>
-    </div>
+      </div>
     </section>
 
     <script src="app.js"></script>
