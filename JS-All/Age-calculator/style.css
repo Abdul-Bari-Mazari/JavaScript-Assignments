@@ -1,8 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap');
+
 body {
-    height: 100vh;
+    font-family: 'Nunito', sans-serif;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.git-logo {
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+.main-section {
+    height: 100%;
+}
+
+.main-div {
+    height: 300px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    color: white;
+    background-color: #252424d6;
+}
+
+.calculate {
+    border: 2px solid orange;
+}
+
+.calculate:hover {
+    opacity: 0.8;
+}
+
+.calculated-dates p {
+    box-shadow: rgba(3, 193, 214, 0.729) 0px 0px 40px 0px;
+}
+
+@media (max-width: 590px) {
+    .main-div {
+        height: 100%;
+    }
+
+    .calculated-dates {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .calculated-dates p {
+        display: block !important;
+        width: 100%;
+    }
 }

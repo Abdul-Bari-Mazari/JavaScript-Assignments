@@ -1,18 +1,78 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Age Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+      <div class="container">
+        <a class="navbar-brand fs-2 fw-bold text-warning" href="#"
+          ><span class="abdul text-light">Abdul</span> Bari</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <img
+            class="git-logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"
+            alt=""
+          />
+        </div>
+      </div>
+    </nav>
 
-</head>
-<body>
-    
-    <h1>WORK IN PROGRESS.....</h1>
+    <section class="main-section bg-secondary p-5 d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row text-center d-flex align-items-center justify-content-center">
+          <div class="col rounded main-div">
+            <h2 class="text-light">Age Calculator</h2>
+            <div class="getDate mt-4 d-flex flex-column gap-3 d-sm-block">
+              <input
+                class="date-input rounded border border-2 px-3 p-2 text-dark"
+                type="date" id="date-input"
+              />
+              <button
+                onclick="calculateDOB()" class="calculate rounded px-4 p-2 bg-success fw-bold text-light mx-3"
+              >
+                Calculate
+              </button>
+
+            </div>
+            <div class="calculated-dates mt-5">
+                <p class="bg-light d-block d-sm-inline px-4 py-3 rounded"><span class="fw-bold fs-4" id="years"></span> years</p>
+                <p class="bg-light d-block d-sm-inline mx-4 px-4 py-3 rounded"><span class="fw-bold fs-4" id="months"></span> months</p>
+                <p class="bg-light d-block d-sm-inline px-4 py-3 rounded"><span class="fw-bold fs-4" id="days"></span> days</p>
+            </div>
+            <p id="errorMessage" class="d-inline text-warning fw-bold fs-5 mt-5"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="app.js"></script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
