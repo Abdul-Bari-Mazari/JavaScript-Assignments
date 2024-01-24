@@ -37,6 +37,27 @@ body {
     box-shadow: rgba(3, 193, 214, 0.729) 0px 0px 40px 0px;
 }
 
+.custom-shape-divider-bottom-1706096318 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1706096318 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1706096318 .shape-fill {
+    fill: #252424D6;
+}
+
 @media (max-width: 590px) {
     .main-div {
         height: 100%;
