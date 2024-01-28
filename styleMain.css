@@ -1,8 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    overflow: hidden;
     font-family: 'Poppins', sans-serif;
+    background: black;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color:rgb(129, 0, 0)!important;
+}
+
+.git-logo {
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
 }
 
 .dua-img {
@@ -15,7 +33,15 @@ body {
 
 }
 
-@keyframes myAnim {
+.card {
+    box-shadow: rgb(255, 255, 255) 0px 2px 12px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.card-img-top {
+    height: 230px;
+}
+
+/* @keyframes myAnim {
 	0% {
 		opacity: 0;
 		transform: scale(1.4);
@@ -25,9 +51,9 @@ body {
 		opacity: 1;
 		transform: scale(1);
 	}
-}
+} */
 
-.list-container {
+/* .list-container {
     background: transparent;
     backdrop-filter: blur(160px);
     border: 1px solid rgb(255, 255, 255);
@@ -59,4 +85,4 @@ ul li {
     a {
         font-size: 16px !important;
     }
-}
+} */
