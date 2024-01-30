@@ -3,6 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: black;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
 .cursor-pointer {
@@ -21,9 +22,9 @@ a {
     width: 50px;
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
-}
-/* 
-.dua-img {
+} 
+
+/* .background-img {
     background-image: url(./imgs/js-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -31,22 +32,25 @@ a {
     animation: myAnim 2s ease 0s 1 normal forwards;
     height: 110vh;
 
-} */
+}  */
 
 
 .card {
     box-shadow: rgb(255, 255, 255) 0px 2px 12px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1,1.1);
 }
 
 .card-img-top {
     height: 230px;
-}
-
-#ramadanImage {
     border-bottom: 2px solid gray !important;
 }
 
-/* @keyframes myAnim {
+
+@keyframes myAnim {
 	0% {
 		opacity: 0;
 		transform: scale(1.4);
@@ -56,38 +60,4 @@ a {
 		opacity: 1;
 		transform: scale(1);
 	}
-} */
-
-/* .list-container {
-    background: transparent;
-    backdrop-filter: blur(160px);
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
-
-a {
-    text-decoration: none;
-    width: fit-content;
-
-}
-
-.assign-name:hover {
-    text-decoration: underline;
-    text-decoration-color: yellow;
-}
-
-ul li {
-    list-style: none;
-    color: white;
-    width: fit-content;
-}
-
-@media only screen and (max-width: 480px) {
-    ul li {
-        font-size: 16px !important; 
-    }
-
-    a {
-        font-size: 16px !important;
-    }
-} */
