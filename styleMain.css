@@ -22,7 +22,7 @@ a {
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
 }
-
+/* 
 .dua-img {
     background-image: url(./imgs/js-img.jpg);
     background-repeat: no-repeat;
@@ -31,7 +31,8 @@ a {
     animation: myAnim 2s ease 0s 1 normal forwards;
     height: 110vh;
 
-}
+} */
+
 
 .card {
     box-shadow: rgb(255, 255, 255) 0px 2px 12px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -39,6 +40,10 @@ a {
 
 .card-img-top {
     height: 230px;
+}
+
+#ramadanImage {
+    border-bottom: 2px solid gray !important;
 }
 
 /* @keyframes myAnim {

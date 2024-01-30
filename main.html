@@ -36,70 +36,107 @@
     5) Facebook Post
   -->
 
-  <div class="container">
+  <div class="container d-flex align-items-center justify-content-center">
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 p-2 pg-sm-5 mt-1 mt-sm-0">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 mt-1 mt-sm-0 mb-5 p-3 p-sm-0 text-center">
 
-      <a href="./JS-All/Simple-Calculator/index.html" target="_blank">
+      <!-- Ramadan Countdown Card -->
+      <a href="./JS-All/Ramadan-Days-Counter/index.html" target="_blank">
+
         <div class="col">
+
           <div class="card border-0 rounded-3">
 
-            <img id="calculatorMainImage" src="./imgs/calculator-main.png" class="card-img-top" alt="..."
-              onmouseover="changeImage('./imgs/calculator-hover.webp')"
-              onmouseout="changeImage('./imgs/calculator-main.png')">
+            <img id="ramadanImage" class="card-img-top" src="./imgs/Ramadan-hover.png" alt=""
+              onmouseover="changeRamadanImage('./imgs/Ramadan-main.webp')"
+              onmouseout="changeRamadanImage('./imgs/Ramadan-hover.png')">
 
+            <div class="card-body bg-dark text-light text-center rounded-bottom-3">
 
-            <div class="card-body rounded-bottom-3 bg-dark text-light text-center">
+              <h3 class="card-title mt-2">Ramandan Counter</h3>
 
-              <h2 class="card-title mt-2 fw-bold ">Simple Calculator</h2>
-
-              <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
-                voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p>
+              <!-- <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
+                    voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p> -->
 
             </div>
 
           </div>
 
         </div>
-      </a>
 
+      </a>
+      <!-- Ramadan Countdown Card -->
+
+
+      <!-- Random Color Card -->
       <a href="./JS-All/Random-color-on-Click/index.html" target="_blank">
         <div class="col">
           <div class="card border-0 rounded-3">
 
-            <img id="colorMainImage" src="./imgs/rgb-main.jpg" class="card-img-top" alt="..."
+            <img id="colorImage" src="./imgs/rgb-main.jpg" class="card-img-top" alt="..."
               onmouseover="changeColorImage('./imgs/rgb-hover.jpg')"
               onmouseout="changeColorImage('./imgs/rgb-main.jpg')">
 
 
             <div class="card-body rounded-bottom-3 bg-dark text-light text-center">
 
-              <h2 class="card-title mt-2 fw-bold fs-3">Random Color Generator</h2>
+              <h2 class="card-title mt-2 fs-3">Random Color Generator</h2>
 
-              <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
-                voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p>
+              <!-- <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
+                voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p> -->
             </div>
 
           </div>
 
         </div>
       </a>
+      <!-- Random Color Card -->
 
+      
+      <!-- Password Generator -->
+      <a href="./JS-All/Password-generator/index.html" target="_blank">
+
+        <div class="col">
+
+          <div class="card border-0 rounded-3">
+
+            <img id="passwordImage" class="card-img-top bg-black" src="./imgs/password-main2.png" alt=""
+              onmouseover="changePassImage('./imgs/password-main2.png')"
+              onmouseout="changePassImage('./imgs/password-main.webp')">
+
+            <div class="card-body bg-dark text-light text-center rounded-bottom-3">
+
+              <h3 class="card-title mt-2">Password Generator</h3>
+
+              <!-- <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
+              voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p> -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </a>
+      <!-- Password Generator -->
+
+
+      <!-- Calculator Card -->
       <a href="./JS-All/Simple-Calculator/index.html" target="_blank">
         <div class="col">
           <div class="card border-0 rounded-3">
 
-            <img id="calculatorMain" src="./imgs/calculator-main.png" class="card-img-top" alt="..."
+            <img id="calculatorImage" src="./imgs/calculator-main.png" class="card-img-top" alt="..."
               onmouseover="changeImage('./imgs/calculator-hover.webp')"
               onmouseout="changeImage('./imgs/calculator-main.png')">
 
 
             <div class="card-body rounded-bottom-3 bg-dark text-light text-center">
 
-              <h2 class="card-title mt-2 fw-bold ">Simple Calculator</h2>
+              <h3 class="card-title mt-2">Simple Calculator</h3>
 
-              <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
-                voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p>
+              <!-- <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
+                voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p> -->
 
             </div>
 
@@ -107,50 +144,64 @@
 
         </div>
       </a>
+      <!-- Calculator Card -->
 
-      <div class="col">
-        <div class="card">
 
-          <img src="..." class="card-img-top" alt="...">
+      <!-- Age Calculator -->
+      <a href="./JS-All/Age-calculator/index.html" target="_blank">
 
-          <div class="card-body">
+        <div class="col">
 
-            <h5 class="card-title">Card title</h5>
+          <div class="card border-0 rounded-3">
 
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
+            <img id="ageImage" class="card-img-top" src="./imgs/age-main.jpg" alt=""
+              onmouseover="changeAgeImage('./imgs/age-hover.jpg')" onmouseout="changeAgeImage('./imgs/age-main.jpg')">
+
+            <div class="card-body bg-dark text-light text-center rounded-bottom-3">
+
+              <h3 class="card-title mt-2">Age Calculator</h3>
+
+              <!-- <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
+                voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p> -->
+
+            </div>
 
           </div>
+
         </div>
-      </div>
+
+      </a>
+      <!-- Age Calculator -->
+
+    
+      <!-- Facebook Post -->
+      <a href="./JS-All/Facebook-post/index.html" target="_blank">
+
+        <div class="col">
+
+          <div class="card border-0 rounded-3">
+
+            <img id="fbImage" class="card-img-top" src="./imgs/facebook-hover.webp" alt=""
+              onmouseover="changeFbImage('./imgs/facebook-post.png')"
+              onmouseout="changeFbImage('./imgs/facebook-hover.webp')">
+
+            <div class="card-body bg-dark text-light text-center rounded-bottom-3">
+
+              <h3 class="card-title mt-2">Facebook Post Clone</h3>
+
+              <!-- <p class="card-text my-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni impedit
+                voluptates dolore inventore odit doloremque, dolores at ab facere unde, iste, officiis doloribus</p> -->
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </a>
+      <!-- Facebook Post -->
 
     </div> <!--  Row closing div -->
-
-
-    <!-- <div class="row p-0 py-5 p-sm-5">
-      <div class="col-12 col-md-6 col-lg-3">
-
-        <div class="card" style="width: 18rem;">
-          <img src="./imgs/calculator-main.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-        </div>
-
-        <div class="card text-center text-light border-0 bg-secondary">
-
-          <img class="card-img-top img-fluid" src="./imgs/calculator-main.png" alt="">
-
-          <div class="card-body p-3">
-
-            <h3 class="card-title text-decoration-underline mt-3">Simple Calculator</h3>
-            <p class="card-text"> A simple and basic calculator for daily use.</p>
-          </div>
-        </div>
-
-      </div>
-    </div> -->
-
   </div> <!--  Container closing div -->
 
   <script src="app.js"></script>
