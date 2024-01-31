@@ -1,7 +1,30 @@
-.range {
-    accent-color: white;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.box {
-    background-color:darkred;
+.range-color {
+  accent-color: white;
 }
+
+.darkred {
+  background-color: rgb(2, 3, 47);
+}
+
+@media (max-width: 768px) {
+  .img-div {
+    gap: 30px;
+  }
+}
+
+/* @media (max-width: 460px) {
+  .pass-heading {
+    font-size: 22px;
+    font-weight: 900;
+  }
+
+  .paragraphs li {
+    font-size: 18px;
+  }
+} */

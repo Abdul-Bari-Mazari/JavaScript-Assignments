@@ -1,16 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    background: black;
+    animation: myAnim 2s ease 0s 1 normal forwards;
 }
 
-.back-img {
-    height: 100vh;
-    background-image: url(./imgs/background.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    cursor: pointer;
+@keyframes myAnim {
+	0% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
 
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color:rgb(129, 0, 0)!important;
+}
+
+.git-logo {
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+} 
+
+/* .background-img {
+    background-image: url(./imgs/js-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+    height: 110vh;
+
+}  */
+
+
+.card {
+    box-shadow: rgb(255, 255, 255) 0px 2px 12px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1,1.1);
+}
+
+.card-img-top {
+    height: 230px;
+    border-bottom: 2px solid gray !important;
+}
+
+@media (max-width: 576px) {
+    .card:hover {
+        transform: scale(1,1)
+    }
 }
 

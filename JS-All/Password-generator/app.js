@@ -22,9 +22,4 @@ rangeInput.addEventListener("input", () => {
   generatePass();
 });
 
-//rangeInput = slider
-
-//slider-Number = Text that will be changed after slider movement
-
 generateButton.addEventListener("click", generatePass);
-
