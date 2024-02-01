@@ -23,13 +23,8 @@ body {
   }
 }
 
-/* @media (max-width: 460px) {
-  .pass-heading {
-    font-size: 22px;
-    font-weight: 900;
+@media (max-width: 345px) {
+  .checkboxes {
+    flex-direction: column !important;
   }
-
-  .paragraphs li {
-    font-size: 18px;
-  }
-} */
+}
