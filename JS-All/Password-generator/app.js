@@ -3,6 +3,7 @@ var rangeInput = document.getElementById("input");
 var sliderNumber = document.getElementById("range-text");
 var output = document.getElementById("output");
 var generateButton = document.getElementById("generate-button");
+var copy = document.getElementById("copy");
 
 var error = document.getElementById("error");
 
@@ -24,50 +25,92 @@ function generatePass() {
   var newPassword = "";
   var selectedChars = "";
 
-  if(smallCheckbox.checked) {
+  if (smallCheckbox.checked) {
     selectedChars += smallLetters;
   }
 
-  if(capitalCheckbox.checked) {
+  if (capitalCheckbox.checked) {
     selectedChars += capitalLetters;
   }
 
-  if(numberCheckbox.checked) {
+  if (numberCheckbox.checked) {
     selectedChars += numbers;
   }
 
-  if(specialCheckbox.checked) {
+  if (specialCheckbox.checked) {
     selectedChars += specialCharacter;
   }
 
-
   console.log(selectedChars, smallLetters.length);
 
-  for(let i = 0; i < rangeInput.value; i++) {
+  for (let i = 0; i < rangeInput.value; i++) {
     var randomNumbers = Math.floor(Math.random() * selectedChars.length);
-    console.log(selectedChars[randomNumbers])
+    console.log(selectedChars[randomNumbers]);
     newPassword += selectedChars[randomNumbers];
 
-  output.value = newPassword;
-  error.innerHTML = "";
+    var shield = document.getElementById("shield");
+    var passwordLevel = document.getElementById("password-level");
+    var shieldSmall = document.getElementById("shield-small");
+    var passwordLevelSmall = document.getElementById("password-level-small");
 
-  if(smallCheckbox.checked == false && capitalCheckbox.checked == false && numberCheckbox.checked == false && specialCheckbox.checked == false) {
-    error.innerHTML = "(Select any one to include)";
-    error.style.color = "red";
-    error.style.fontWeight = "light";
-    output.value = "";
+    if (output.value !== "" && rangeInput.value <= 12) {
+      shield.style.color = "red";
+      passwordLevel.innerHTML = "Weak Password";
+
+      shieldSmall.style.color = "red";
+      passwordLevelSmall.innerHTML = "Weak Password";
+    } else if (
+      output.value !== "" &&
+      rangeInput.value > 12 &&
+      rangeInput.value < 20
+    ) {
+      shield.style.color = "yellow";
+      passwordLevel.innerHTML = "Moderate Password";
+
+      shieldSmall.style.color = "yellow";
+      passwordLevelSmall.innerHTML = "Moderate Password";
+    } 
+    else if (output.value !== "" && rangeInput.value > 20) {
+      shield.style.color = "green";
+      passwordLevel.innerHTML = "Strong Password";
+
+      shieldSmall.style.color = "green";
+      passwordLevelSmall.innerHTML = "Strong Password";
     }
 
-  }
+    output.value = newPassword;
+    error.innerHTML = "";
+    copy.style.fontWeight = "normal";
 
+    if (
+      smallCheckbox.checked == false &&
+      capitalCheckbox.checked == false &&
+      numberCheckbox.checked == false &&
+      specialCheckbox.checked == false
+    ) {
+      error.innerHTML = "(Select any one to include)";
+      error.style.color = "red";
+      error.style.fontWeight = "light";
+      output.value = "";
+    }
+  }
 }
 
 function rangeTextToValue() {
   sliderNumber.innerHTML = rangeInput.value;
 }
 
+function copyPassword() {
+  var copy = document.getElementById("copy");
 
-
+  if (output.value === "") {
+    copy.style.fontWeight = "normal";
+  } else {
+    output.setSelectionRange(0, 999);
+    navigator.clipboard.writeText(output.value);
+    copy.style.fontWeight = "bold";
+  }
+}
 
 // **** Tried different logic ****
 
